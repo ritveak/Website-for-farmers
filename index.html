@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>J&B Technologies</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+      <link rel="shortcut icon" href="JB.jpg">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+    text-align: center;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  #home{
+  	background: url("images/banner.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: green;
+  }
+ 
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: green;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+      height: 650px;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: green;
+      font-size: 50px;
+  }
+  .logo {
+      color: green;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: green;
+  }
+  .carousel-indicators li {
+      border-color: green;
+  }
+  .carousel-indicators li.active {
+      background-color: green;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid green; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid green;
+      background-color: #fff !important;
+      color: green;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: green !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: green;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: green;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: green !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: green;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+
+ .contact-stripe {
+  display: block;
+    position: fixed;
+    width: 6%;
+    bottom: 0;
+    text-align: center;
+    z-index: 999;
+    padding: 10px;
+  background-color: green;
+    }
+    .contact-stripe a:hover{
+      color:#fff;
+
+    }
+    .box{
+ 
+  color: #fff;
+}
+
+
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+
+
+
+.navbar-brand{
+width: 20% !important;
+    height: 20% !important;
+}
+.col-sm-5{
+    margin-left: 2% !important;
+}
+
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+ .contact-stripe {
+  display: block;
+    position: fixed;
+    width: 9%;
+    bottom: 0;
+    text-align: center;
+    z-index: 999;
+    padding: 10px;
+  background-color: green;
+    }
+    .contact-stripe a:hover{
+      color:#fff;
+
+    }
+    .box{
+ 
+  color: #fff;
+}
+
+  }
+  @media screen and (max-width: 600px) {
+    .logo {
+        font-size: 150px;
+    }
+    .contact-stripe {
+    display: block;
+        }
+
+
+  .contact-stripe {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    z-index: 999;
+    padding: 10px;
+  background-color: green;
+    }
+    .contact-stripe a:hover{
+      color:#fff;
+
+    }
+    .box{
+ 
+  color: #fff;
+}
+
+  }
+   #about{
+  	background: url("images/about.jpg") no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  }
+
+  #f1_container {
+  position: relative;
+  margin: 10px auto;
+  width: 450px;
+  height: 281px;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 80%;
+  height: 80%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+  box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+  position: absolute;
+  margin-top: 30px;
+  width: 80%;
+  height: 80%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 20px;
+  color: #aaa;
+  text-align: left;
+  background-color: white;
+}
+td{
+	padding-left: 100px;
+	
+}
+
+  </style>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a href="#home"><img src="https://i.imgur.com/8Y7lxx6.jpg" class="navbar-brand" style="width: 40%; height: 40%" /></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="loans.html">LOANS</a></li>
+       <!-- <li><a href="#pricing">PRICING</a></li>-->
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="jumbotron text-center" id="home">
+	<br>
+  <div style="border-radius: 50px; color: white;width: 40%; margin:auto;margin-top: 100px; padding: 10px;"><h1 style="color: black">J&B</h1> 
+  <p><h1 style="color: black">For the Farmers, by the farmers</h1></p> </div>
+  <!--<form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+  -->
+</div>
+
+<!-- Container (About Section) -->
+<div id="about">
+	<br>
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+
+      <h2 style="color: white;">About J&B</h2><br>
+      <div style="width: 80%;"><h4 style="color: white;">We specialize in both product & services, we believe in learning and improving day by day, we in J&B are looking forward to solve any unsolved issues with our great expertise in farming </h4><br></div>
+     <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>--> 
+    </div>
+   
+  </div>
+  
+</div></div>
+<!--
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+-->
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <div>
+  	<br>
+  <h2  style="">SERVICES</h2>
+  <h4 style="">What we offer</h4>
+
+  <br>
+</div>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      
+
+    	<div id="f1_container">
+<div id="f1_card" class="shadow">
+  <div class="front face">
+     <span class="	glyphicon glyphicon-usd logo-small"></span>
+      <h4>SELLING</h4>
+  </div>
+  <div class="back face center"><a href="smallscalepurchase.html" style="color: black">
+      <p>We can create pixel perfect and responsive web design for our client’s business website, so they can get more customers and generate leads. </p></a>
+  </div>
+</div>
+</div>
+
+
+
+     
+      
+    </div>
+    <div class="col-sm-4">
+
+
+<div id="f1_container">
+<div id="f1_card" class="shadow">
+  <div class="front face">
+    
+      <span class="glyphicon glyphicon-list-alt logo-small"></span>
+      <h4>SCHEMES</h4>
+  </div>
+  <div class="back face center"><a href="schemes.html" style="color: black">
+    <p>We have expertise in multifarious games & apps development that will be helpful in propelling the business in online marketplace. </p>
+      </a>
+  </div>
+</div>
+</div>
+
+
+
+      </div>
+    <div class="col-sm-4">
+    	<div id="f1_container">
+<div id="f1_card" class="shadow">
+  <div class="front face">
+     <span class="glyphicon glyphicon-cloud logo-small"></span>
+      <h4>WEATHER</h4>
+  </div>
+  <div class="back face center">
+    <p>Our designing team helps you enhance your design that will bring professionalism in the business image & optimize marketing.</p>
+  </div>
+</div>
+</div>
+     
+         </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+
+    	<div id="f1_container">
+<div id="f1_card" class="shadow">
+  <div class="front face">
+     <span class="	glyphicon glyphicon-play-circle logo-small"></span>
+      <h4>VIDEO and GUIDES</h4>
+
+  </div>
+  <div class="back face center">
+     <p>We have a team of digital marketing experts, who devise proper strategy to optimize the ranking of the website in the search engine result page. </p>
+  
+  </div>
+</div>
+</div>
+
+            </div>
+    <div class="col-sm-4">
+
+    	<div id="f1_container">
+<div id="f1_card" class="shadow">
+  <div class="front face">
+    <span class="glyphicon glyphicon-pencil logo-small"></span>
+      <h4>BLOG</h4>
+  </div>
+  <div class="back face center"><a href="blog.html" style="color: black">
+      <p>Look no further for innovative, highly developed and sophisticated data management and programming skills. we have it all. We can take any project or campaign and create a working solution.</p></a>
+  </div>
+</div>
+</div>
+      
+      
+    </div>
+    <div class="col-sm-4">
+    	<div id="f1_container">
+<div id="f1_card" class="shadow">
+  <div class="front face">
+    <span class="glyphicon glyphicon-question-sign logo-small"></span>
+      <h4 style="color:#303030;"><a href="FAQ.html" style="color: black">FAQ</a></h4>
+  </div>
+  <div class="back face center"><a href="FAQ.html" style="color: black">
+      <p>Looking forward for many services we can give to solve our customer problems</p></a>
+  </div>
+</div>
+</div>
+      
+      
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <br><h2>Portfolio</h2><br>
+  <h4>WHAT WE HAVE CREATED</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4 col-xs-12 col-md-4">
+      <div class="thumbnail">
+        <img src="work/ashirwad.png" alt="ashirwad hospital" width="400" height="300" >
+       
+      </div>
+      <div>
+         <a href="http://ashirwadhospital.net"><strong>Survey</strong></a>
+        <p>We do site survey for our clients.</p>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12 col-md-4">
+      <div class="thumbnail">
+        <img src="work/architect.png" alt="architect website" width="400" height="300">
+    
+      </div>
+      <div>
+            <a href="http://rishikularchitects.com"><strong>Seminars</strong></a>
+        <p> We conduct seminars for effective farming.</p>
+      </div>
+    </div>
+    
+    <div class="col-sm-4 col-xs-12 col-md-4">
+      <div class="thumbnail">
+        <img src="work/med.png" alt="Pharmacy website" width="400" height="300">
+    
+      </div>
+      <div>
+            <a href="http://medson.in"><strong>Modern Farming</strong></a>
+        <p>We do demo sessions for modern farming techniques.</p>
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This company is the best. they made my farming effective , efficient and easy."<br><span>Anurag jain</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!....they gave me the best seeds and fertilizers in best budget"<br><span>Manoj goyal</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Could I... BE any more happy with this company?"<br><span>Sanchit Gupta</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) 
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+-->
+<!-- Container (Contact Section) -->
+<!-- <div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5" style="text-align: center;margin-left: 30%">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Gurgaon, Haryana</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 9717813580</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> jnbtechno@gmail.com</p>
+      <a href="https://www.facebook.com/JnBtechsolutions/"><i class="fa fa-facebook-square" style="font-size:36px;color:#4267b2"></i></a>&nbsp;&nbsp;
+      <a href="https://www.instagram.com/jnbtechno/"><i class="fa fa-instagram" style="font-size:36px;color:#fb3958"></i></a>  &nbsp;&nbsp;
+      <a href="https://twitter.com/jnb_techno"><i class="fa fa-twitter" style="font-size:36px;color:#1DA1F2"></i></a>
+      </div> -->
+    <!--<div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>-->
+  </div>
+</div>
+
+<!-- Add Google Maps 
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- 
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p> All Copyrights reserved @ <h4 title="J&B">J&B</h4></p>
+</footer> -->
+
+<footer>   
+
+   <div id="contact" style="background-color:#1E2832; color: rgba(255, 255, 255, 0.75);">
+                <table >
+                	<tr>
+                	<td style="width: 30%; padding-left: 130px;"><strong><u>Address</u></strong>
+                    <br> A-109 lajpat nagar,
+  
+                    <br> Moradabad, 
+                    <br>UP,244001</td>
+                    <td><br><strong><u>Contacts</u></strong>
+                    <br>
+                    <p>Mobile : +91 9717813580</p>
+      <p>E-mail : jnbtechno@gmail.com</p>
+      <a href="https://www.facebook.com/JnBtechsolutions/"><i class="fa fa-facebook-square" style="font-size:36px;color:#4267b2"></i></a>&nbsp;&nbsp;
+      <a href="https://www.instagram.com/jnbtechno/"><i class="fa fa-instagram" style="font-size:36px;color:#fb3958"></i></a>  &nbsp;&nbsp;
+      <a href="https://twitter.com/jnb_techno"><i class="fa fa-twitter" style="font-size:36px;color:#1DA1F2"></i></a>
+
+                </td>
+           
+            <!-- <div class="col-9 col-md-2 col-sm-6 mbr-fonts-style display-7">
+                <p class="mbr-text" style="font-size: 15px;">
+                    <strong><u>Social Media Links :</u></strong>
+                    <br>
+                    <br><br>
+                    <a href="facebook.com"><img src="https://centredactionbenevolecowansville.files.wordpress.com/2017/09/logo-facebook.png" style="padding:5px;width:30%;"></a> 
+                    <a href="instagram.com"><img src="https://i2.wp.com/www.lkblondon.com/wp-content/uploads/2017/08/instagram-colourful-icon.png" style="padding:5px;width:25%;"></a>
+                    <a href="twitter.com"><img src="http://files.softicons.com/download/social-media-icons/clean-simple-social-icons-by-creative-nerds/png/256x256/Twitter.png" style="padding:5px;width:25%;"></a>
+                   
+                </p>
+            </div> -->
+            <td>
+            <div class="col-12 col-md-6" style="padding-top: 50px; padding-bottom: 50px;">
+                <div class="google-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.5498366100146!2d78.77785431464929!3d28.822485982343235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390afbbaeb0bb88d%3A0xb32737cfa8553cc4!2sAshirwad+Multispecipeciality+Hospital+%26+Advance+Laproscopic+Surgery+Centre+(Best+Hospital)!5e0!3m2!1sen!2sin!4v1527858211730" width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+            </div>
+        </td></tr></table></div>
+
+
+  
+</footer>
+
+
+<!--calling button and email button-->
+
+
+<div class="contact-stripe" style="">
+  <div class="row" style="margin:0px;">
+   <div class="col-xs-6 col-md-12">
+    <a href="tel:8130435681work/" role="button" class="box"><i class="fa fa-phone fa-2x"></i></a>
+   </div>
+   <div class="col-xs-6 col-md-12">
+    <a href="mailto:jnbtechno@gmail.com" role="button" class="box"><i class="fa fa-envelope fa-2x" ></i></a>
+   </div>
+  </div>
+</div>
+
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+1. frame.html is the main file
+2. It links to top,left and right.html
+3. Left.html contains the hyperlinks to respective language video.
+4. Right.html displays the videos corresponding to the link clicked in the left panel.
+5. You need to change the href addresses for the hindi,english,.... .html pages in the source file.
